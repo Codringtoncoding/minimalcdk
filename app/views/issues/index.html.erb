@@ -1,0 +1,7 @@
+<h1>issues</h1>
+
+<ul>
+  <% @issues.each do |issue| %>
+    <li><%= link_to issue.number, issue_path(issue) %></li>
+  <% end %>
+</ul>
