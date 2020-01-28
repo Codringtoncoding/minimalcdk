@@ -1,4 +1,4 @@
-Create a 2 model MVC with comments and issues(cases) as the models.
+Created a 2 model MVC with comments and issues(cases) as the models.
 
 1. please run bundle install and install simpleform
 rails generate simple_form:install
