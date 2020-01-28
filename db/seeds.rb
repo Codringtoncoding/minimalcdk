@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts 'Creating issues...'
+Issue.create!({
+  number: "00234542"
+})
+
+Issue.create!({
+  number: "00234543"
+})
+
+
+puts 'Finished!'
