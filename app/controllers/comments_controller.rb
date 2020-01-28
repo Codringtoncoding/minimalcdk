@@ -3,11 +3,11 @@ class CommentsController < ApplicationController
     @issue = Issue.find(params[:issue_id])
     @comment = Comment.new(comment_params)
     @comment.issue = @issue
-    if @comment.save
-      redirect_to issue_path(@issue)
-    else
-      render 'issues/show'
-    end
+    @comment.save
+    #   redirect_to issue_path(@issue)
+    # else
+    #   render 'issues/show'
+    # end
   end
 
   private

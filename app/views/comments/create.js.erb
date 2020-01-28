@@ -1,0 +1,5 @@
+// 1. create html for review
+newComment = "<p><%= @comment.content %></p>"
+//2.append new review
+comments = document.getElementById('comments')
+comments.insertAdjacentHTML('beforeend', newComment)
