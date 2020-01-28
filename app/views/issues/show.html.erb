@@ -1,4 +1,3 @@
-
 <h1><%= @issue.number %>
 <h2>
   <%= pluralize @issue.comments.size, "comment" %>
@@ -13,3 +12,5 @@
     <% end %>
   <% end %>
 </div>
+
+<% render 'comments/form', issue: @issue, comment: @comment %>
